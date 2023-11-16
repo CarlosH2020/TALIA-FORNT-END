@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TALIA</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li><a href="#">Página Inicial</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </div>
+  <div id="conteiner-camera-historico">
+    <div id="camera-container">
+      <img src="{{ url_for('video_feed') }}" id="frame">
+      <!-- Aqui você pode adicionar um elemento de vídeo para a câmera ou outro conteúdo relacionado à câmera. -->
+    </div>
+    <div id="historico-palavras">
+      <h2>Histórico de Palavras</h2>
+      <!-- Aqui você pode adicionar o histórico de palavras ou outro conteúdo relacionado ao histórico. -->
+    </div>
+  </div>
+  <div id="botoes-container">
+    <button id="botao-esquerda">Botão</button>
+    <textarea id="campo-texto" rows="6"></textarea>
+  </div>
+</body>
+</html>
